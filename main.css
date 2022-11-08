@@ -1,0 +1,84 @@
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+header .baner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 400px;
+  background-image: url("autko.jpg");
+  opacity: 0.4;
+  background-size: cover;
+}
+header h1 {
+  font-size: 3em;
+  position: absolute;
+  color: #f00;
+  left: 28%;
+  bottom: 72%;
+  opacity: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main h2 {
+  font-size: 2em;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .box {
+  width: 200px;
+  height: 500px;
+  background-color: #040200;
+  border-right: 3px solid #a2a2a2;
+  background-image: url("autko.jpg");
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+main section .box p {
+  font-size: 1em;
+  text-align: center;
+}
+main section .box:hover {
+  width: 210px;
+  height: 510px;
+  transition: 0.3s;
+}
+main article {
+  margin: auto;
+  width: 600px;
+}
+main article p {
+  text-align: center;
+  font-size: 1em;
+}
+main button {
+  background-color: #a2a2a2;
+}
+main button a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #626262;
+  height: 100px;
+}
+footer p {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
