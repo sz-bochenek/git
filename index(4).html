@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paliwo</title>
+</head>
+<body>
+    <select id="jeden" name="paliwo">
+        <option value="6.8">Benzyna95</option>
+        <option value="8">Benzyna98</option>
+        <option value="4">Gaz</option>
+        <option value="7.2">Diesel</option>
+    </select><br>
+    Ilość paliwka:
+    <input id="dwa" type="number" min="1"><br>
+    <input id="trzy" type="checkbox" value="6.9" name="check">Hot-Dog
+    <input id="cztery" type="checkbox" value="4" name="check">Kawa
+    <input id="piec" type="checkbox" value="8" name="check">Herbata<br>
+    <input id="szesc" type="checkbox" value="0.8">Zniżka
+    <button id="btn">Potwierdz</button><br>
+    <p id="para"></p>
+    <script>
+        const a = document.querySelector("#jeden")
+        const b = document.querySelector("#dwa")
+        const c = document.querySelector("#trzy")
+        const d = document.querySelector("#cztery")
+        const e = document.querySelector("#piec")
+        const f = document.querySelector("#szesc")
+        const btn = document.querySelector("#btn")
+        const par = document.querySelector("#para")
+
+        btn.addEventListener('click', function(){
+            let x = 0
+            x=a.value*b.value
+            if(c.checked==true){
+                x=x+parseInt(c.value)
+            }
+            if(d.checked==true){
+                x=x+parseInt(d.value)
+            }
+            if(e.checked==true){
+                x=x+parseInt(e.value)
+            }
+            if(f.checked==true){
+                x=x*0.8
+            }
+            x=x*100
+            let wynik = Math.round(x)/100
+            par.innerHTML = wynik
+        })
+    </script>
+</body>
+</html>
